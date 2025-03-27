@@ -1,0 +1,15 @@
+meta {
+  name: authorById
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/authors/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
